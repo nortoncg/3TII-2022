@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    /* 
+       4. Faça um script que pergunte em que turno você estuda. 
+       Peça para digitar M-matutino ou V-Vespertino ou N- Noturno. 
+       Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" 
+       ou "Valor Inválido!", conforme o caso.
+    */
+
+    var turno = prompt("Digite: M-matutino ou V-Vespertino ou N-Noturno").toUpperCase();
+    if(turno == "M"){
+        alert("Bom dia!");
+    }
+    if(turno == "V"){
+        alert("Boa tarde");
+    }
+    if(turno == "N"){
+        alert("Boa noite!");
+    }
+
+    if(turno != "N" && turno != "V" && turno != "M"){
+        alert("Valor Inválido");
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

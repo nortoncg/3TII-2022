@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        5. As Organizações Tabajara resolveram dar um aumento de salário aos seus
+        colaboradores e lhe contrataram para desenvolver um script que calculará os
+        reajustes. 
+        Faça um script que recebe o salário de um colaborador 
+        e o reajuste segundo os seguinte critérios, baseado no salário atual:
+        */
+        var salarioColaborador = parseInt(prompt("Digite o seu salário atual"));
+        var novoSalário = 0;
+        var percentualAplicado = "";
+
+        //a) salários até R$ 280,00 (incluindo) : aumento de 20%
+        if (salarioColaborador <= 280) {
+            novoSalário = salarioColaborador * 1.2;
+            percentualAplicado = "20%";
+        }
+        //b) salários entre R$ 280,00 e R$ 700,00 : aumento de 15%
+        if (salarioColaborador > 280 && salarioColaborador <= 700) {
+            novoSalário = salarioColaborador * 1.15;
+            percentualAplicado = "15%";
+        }
+        //c) salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+        if (salarioColaborador > 700 && salarioColaborador <= 1500) {
+            novoSalário = salarioColaborador * 1.1;
+            percentualAplicado = "10%";
+        }
+
+        //d) salários de R$ 1500,00 em diante : aumento de 5%
+        if (salarioColaborador > 1500) {
+            novoSalário = salarioColaborador * 1.05;
+            percentualAplicado = "5%";
+        }
+
+        //e) Após o aumento ser realizado, informe na tela:
+        //   o salário antes do reajuste;
+        alert("o salário antes do reajuste: " + salarioColaborador);
+        //o percentual de aumento aplicado;
+        alert("o percentual de aumento aplicado: " + percentualAplicado);
+        //o valor do aumento;
+        alert("o valor do aumento: " + (novoSalário - salarioColaborador));
+        //o novo salário, após o aumento.
+        alert("o novo salário, após o aumento: " + novoSalário);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

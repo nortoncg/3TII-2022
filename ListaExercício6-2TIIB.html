@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        6. Faça um script que lê as duas notas parciais obtidas por um aluno 
+        numa disciplina ao longo de um semestre, e calcule a sua média. 
+        A atribuição de conceitos obedece à tabela abaixo:
+        */
+        var nota1 = parseInt(prompt("Digite a nota 1: "));
+        var nota2 = parseInt(prompt("Digite a nota 2: "));
+        var media = (nota1 + nota2) / 2;
+        var conceito = "";
+        var mensagem = "";
+        //Média de Aproveitamento Conceito
+        //Entre 9.0 e 10.0 A
+        if (media >= 9 && media <= 10) {
+            conceito = "A";
+            mensagem = "Aprovado";
+        }
+        //Entre 7.5 e 9.0 B
+        if (media >= 7.5 && media < 9) {
+            conceito = "B";
+            mensagem = "Aprovado";
+        }
+        //Entre 6.0 e 7.5 C
+        if (media >= 6 && media < 7.5) {
+            conceito = "C";
+            mensagem = "Aprovado";
+        }
+        //Entre 4.0 e 6.0 D
+        if (media >= 4 && media < 6) {
+            conceito = "D";
+            mensagem = "Reprovado";
+        }
+        //Entre 4.0 e zero E
+        if (media < 4) {
+            conceito = "E";
+            mensagem = "Reprovado";
+        }
+
+//O algoritmo deve mostrar numa janela de alert 
+//as notas, a média, o conceito correspondente 
+//e a mensagem “APROVADO” se o conceito for A, B ou C ou“REPROVADO” se o conceito for D ou E.
+alert(nota1);
+alert(nota2);
+alert(media);
+alert(conceito);
+alert(mensagem);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
