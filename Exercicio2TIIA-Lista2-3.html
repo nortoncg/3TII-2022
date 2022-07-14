@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--Cria a Tabela HTML sempre fora do Laço e pense no que deve repetir-->
+<table border="1">
+    <tr><td>N<td><td>Nota 1<td><td>Nota 2<td><td>Nota 3<td><td>Média<td><td>Situação<td></td>
+<script>
+    //Faça um script que receba notas dos 3 trimestres de 5 discente
+    for(i=0;i<5;i++){
+        //recebe as 3 notas
+        var nota1 = parseInt(prompt("Digite a nota 1"));
+        var nota2 = parseInt(prompt("Digite a nota 2"));
+        var nota3 = parseInt(prompt("Digite a nota 3"));
+
+        //calcule a média
+        var media = (nota1+nota2+nota3)/3;
+        
+        //define a situação da média
+        var situacao = "";
+        if(media >= 7 && media < 10){
+            situacao = "Aprovado";
+        }else{
+            situacao = "Reprovado";
+        }
+        if(media == 10){
+            situacao = "Aprovado com Distinção";
+        }
+
+        //escreve a tabela HTML
+        document.write("<tr><td>"+ (i+1) +"<td><td>"+ 
+            nota1 +"<td><td>"+ 
+            nota2 +"<td><td>"+
+            nota3+"<td><td>"+
+            media+"<td><td>"+ 
+            situacao +"<td></td>")
+    }
+    
+
+    </script>
+    </table>
+</body>
+</html>

@@ -1,4 +1,4 @@
-class Person {
+class Pessoa {
 
     name;
     cpf;

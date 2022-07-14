@@ -1,14 +1,16 @@
-class Professor extends Person {
+class Professor extends Pessoa {
 
-    teaches;
+    leciono;
+    siape;
   
-    constructor(name, teaches) {
+    constructor(name, leciono, siape) {
       super(name);
-      this.teaches = teaches;
+      this.leciono = leciono;
+      this.siape = siape;
     }
   
     introduceSelf() {
-      console.log(`Meu nome é ${this.name}, e eu serei seu professor na matéria ${this.teaches}.`);
+      console.log(`Meu nome é ${this.name}, e eu serei seu professor na matéria ${this.leciono}.`);
       //alert("Coisinha de Jesus");
     }
   
@@ -18,7 +20,11 @@ class Professor extends Person {
     }
 
     getNome(){
-      console.log(this.nome);
+      console.log(this.name);
+    }
+
+    getLeciono(){
+      console.log(this.leciono);
     }
   
   }

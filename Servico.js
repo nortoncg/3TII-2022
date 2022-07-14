@@ -1,0 +1,4 @@
+class Servico{
+    descricao;
+    preco;
+}
